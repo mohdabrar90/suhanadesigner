@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: #f7f3f0;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #222;
+  }
+  
+  .page-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 10px auto 0;
+  }
+  
+  .collection-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .collection-item {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collection-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .collection-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .collection-item h3 {
+    margin: 15px;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .collection-item p {
+    margin: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #888;
+    background-color: #f9f9f9;
+  }
+  
