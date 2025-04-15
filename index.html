@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suhana Designer</title>
+  <link rel="stylesheet" href="fashion2.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Merienda:wght@300..900&family=Rancho&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="js" href="myproject.js">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="bg-light shadow-sm py-3">
+  <div class="container text-center d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+    <img src="logo-removebg-preview.png" alt="Suhana Designer Logo" class="img-fluid" style="max-height: 100px;">
+    <h1 class="fw-bold display-6 m-0">Suhana </h1>
+    <h1 class="fw-bold display-6 m-0">Designer</h1>
+  </div>
+</header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"> <p id="pa">Elegance by mohd sajid</p> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="myproject.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Designe</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="abrar1.html">Blouse</a></li>
+              <li><a class="dropdown-item" href="abrar2.html">Wedding Gowns</a></li>
+              <li><a class="dropdown-item" href="abrar3.html">Indo Western</a></li>
+              <li><a class="dropdown-item" href="abrar4.html">Lehenga</a></li>
+              <li><a class="dropdown-item" href="abrar5.html">Suits</a></li>
+              <li><a class="dropdown-item" href="abrar6.html">Western wear</a></li>
+              <li><a class="dropdown-item" href="abrar7.html">Kurtis</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" onsubmit="return handleSearch(event)">
+          <input id="searchInput" class="form-control me-2" type="blouse" placeholder="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.png" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="2.png" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="3.png" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Gallery -->
+  <section class="gallery container py-5">
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6 text-center">
+        
+        <a href="abrar1.html"><img src="Blouse.webp" alt="Blouses" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Blouses</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="abrar2.html"><img src="Dress.webp" alt="Dress" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Wedding Gowns</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="abrar7.html"><img src="Kurta-kurti.webp" alt="Kurtis" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Kurtis</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="abrar4.html"><img src="Lehenga.webp" alt="Lehenga" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Lehengas</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="abrar5.html"><img src="Salwar-suit.webp" alt="Dress" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">suits</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+       <a href="https://www.google.com/search?q=tops+for+women&sca_esv=6f5fcc8f272f4316&udm=2&biw=1280&bih=585&sxsrf=AHTn8zrhl8NwTwsIPZv17HXx-Qxqdc1kCg%3A1744482800389&ei=8LH6Z7S9F83R2roPxMCUmQM&oq=tops&gs_lp=EgNpbWciBHRvcHMqAggAMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMhAQABiABBixAxhDGIMBGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFSKg5UO0JWOgrcAJ4AJABA5gBcKABkQ-qAQQxMS45uAEByAEA-AEBmAIHoALPBKgCCsICBhAAGAcYHsICBRAAGIAEwgIHECMYJxjJAsICChAjGCcYyQIY6gLCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIIEAAYgAQYsQOYAwmIBgGSBwMyLjWgB7uLAbIHAzAuNbgHswQ&sclient=img"> <img src="Top (1).webp" alt="Dress" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Tops</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="https://www.google.com/search?q=shirts+for+women&sca_esv=6f5fcc8f272f4316&udm=2&biw=1280&bih=585&sxsrf=AHTn8zoZlrUScQ2L38aHu_LRmVSLgW3FCw%3A1744483110040&ei=JrP6Z8ydAo6Q4-EPmpkT&ved=0ahUKEwjMyNyAktOMAxUOyDgGHZrMBAAQ4dUDCBE&uact=5&oq=shirts+for+women&gs_lp=EgNpbWciEHNoaXJ0cyBmb3Igd29tZW4yCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESI87UP8EWK8mcAF4AJABAJgBlgGgAYIJqgEEMC4xMLgBA8gBAPgBAZgCCaACjAjCAg0QABiABBixAxhDGIoFwgIGEAAYBxgewgIKEAAYgAQYQxiKBZgDAIgGAZIHAzEuOKAHgjqyBwMwLji4B_sH&sclient=img"><img src="top.webp" alt="Dress" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Shirts</h5>
+      </div>
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="https://www.google.com/search?q=ready+to+wear+saree+for+women&sca_esv=6f5fcc8f272f4316&udm=2&biw=1280&bih=585&sxsrf=AHTn8zosVrRqHm0tdUdALIyXYTai_QL-yA%3A1744483197495&ei=fbP6Z_PxHZyD4-EPk4W7yAE&oq=ready+to++for+women&gs_lp=EgNpbWciE3JlYWR5IHRvICBmb3Igd29tZW4qAggBMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5Ih1NQxgRYs0FwAXgAkAEAmAF9oAGQDKoBAzcuOLgBA8gBAPgBAZgCDKACpwrCAg0QABiABBixAxhDGIoFwgIFEAAYgASYAwCIBgGSBwQxLjExoAfMWrIHBDAuMTG4B5UK&sclient=img"><img src="Ready-to-wear-Saree.webp" alt="Dress" class="img-fluid rounded shadow-sm"></a>
+        <h5 class="mt-2">Ready-to-wear-Saree</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-5 bg-light text-center">
+    <h3 class="mb-4">Our Services</h3>
+    <div class="container d-flex flex-wrap justify-content-center gap-4">
+      <div class="card service-card">Custom Tailoring</div>
+      <div class="card service-card">Designer Consultation</div>
+      <div class="card service-card">Home Measurements</div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="py-5 text-center">
+    <h3 class="mb-4">Product Categories</h3>
+    <div class="container d-flex flex-wrap justify-content-center gap-4">
+      <div class="card category-card">Sarees & Lehengas</div>
+      <div class="card category-card">Blouses & Kurtis</div>
+      <div class="card category-card">Western Wear</div>
+      <div class="card category-card">Wedding Gowns</div>
+      <div class="card category-card">Ready to Wear Sarees</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <h3 class="text-center mb-4">Book an Appointment</h3>
+      <form class="contact-form mx-auto" style="max-width: 600px;">
+        <input type="text" class="form-control mb-3" placeholder="Your Name" required />
+        <input type="email" class="form-control mb-3" placeholder="Your Email" required />
+        <input type="tel" class="form-control mb-3" placeholder="Phone Number" required />
+        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+        <button class="btn btn-dark w-100" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919010660212" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Optional: Add social buttons similar to WhatsApp -->
+<a href="https://www.instagram.com/suhana_designer.99" class="instagram-button" target="_blank" title="Follow on Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com/Abrar Khan" class="facebook-button" target="_blank" title="Follow on Facebook">
+  <i class="fab fa-facebook"></i>
+</a>
+
+
+
+  <!-- Footer -->
+<footer class="text-center py-4 bg-dark text-white">
+  <div class="mb-2">
+    <a href="https://www.instagram.com/suhana_designer.99" target="_blank" class="text-white">
+      <i class="fab fa-instagram mx-2"></i>
+    </a>
+    <a href="https://www.facebook.com/Abrar Khan" target="_blank" class="text-white">
+      <i class="fab fa-facebook mx-2"></i>
+    </a>
+    <a href="https://wa.me/919010660212" target="_blank" class="text-white">
+      <i class="fab fa-whatsapp mx-2"></i>
+    </a>
+  </div>
+  <small>&copy; 2025 Suhana Designer | All rights reserved</small>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</search>
+
+<script>
+  function handleSearch(event) {
+    event.preventDefault();
+
+    const input = document.getElementById("searchInput").value.trim().toLowerCase();
+
+    // Map of keywords to page URLs
+    const pageMap = {
+      "blouse": "abrar1.html",
+      "wedding gown": "abrar2.html",
+      "gown": "abrar2.html",
+      "indo western": "abrar3.html",
+      "lehenga": "abrar4.html",
+      "suit": "abrar5.html",
+      "western wear": "abrar6.html",
+      "kurti": "abrar7.html",
+      "kurtis": "abrar7.html",
+      "tops": "https://www.google.com/search?q=tops+for+women",
+      "shirts": "https://www.google.com/search?q=shirts+for+women",
+      "saree": "https://www.google.com/search?q=ready+to+wear+saree+for+women"
+    };
+
+    // Find matching page
+    const match = Object.keys(pageMap).find(keyword => input.includes(keyword));
+
+    if (match) {
+      window.location.href = pageMap[match];
+    } else {
+      alert("No matching result found. Try keywords like 'lehenga', 'kurti', or 'gown'.");
+    }
+
+    return false;
+  }
+</script>
